@@ -1,10 +1,12 @@
 import Foundation
+import os
 import SwiftData
 
 @MainActor
 public final class SessionRepository {
     private let modelContext: ModelContext
     private let appGroupIdentifier = "group.com.offscreen.tracker"
+    private let logger = Logger(subsystem: "com.offscreen.tracker", category: "SessionRepository")
 
     public init(modelContext: ModelContext) {
         self.modelContext = modelContext
@@ -16,16 +18,24 @@ public final class SessionRepository {
         }
         let newSession = OffScreenSession(startTime: time)
         modelContext.insert(newSession)
-        try? modelContext.save()
-        syncWithWidget()
+        do {
+            try modelContext.save()
+            syncWithWidget()
+        } catch {
+            logger.error("Failed to save new session: \(error.localizedDescription)")
+        }
     }
 
     public func endSession(at time: Date = Date()) {
         guard let active = getActiveSession() else { return }
         active.endTime = time
         active.durationMillis = Int64(time.timeIntervalSince(active.startTime) * 1000)
-        try? modelContext.save()
-        syncWithWidget()
+        do {
+            try modelContext.save()
+            syncWithWidget()
+        } catch {
+            logger.error("Failed to save ended session: \(error.localizedDescription)")
+        }
     }
 
     public func getActiveSession() -> OffScreenSession? {
@@ -34,7 +44,12 @@ public final class SessionRepository {
             sortBy: [SortDescriptor(\.startTime, order: .reverse)]
         )
         descriptor.fetchLimit = 1
-        return (try? modelContext.fetch(descriptor))?.first
+        do {
+            return try modelContext.fetch(descriptor).first
+        } catch {
+            logger.error("Failed to fetch active session: \(error.localizedDescription)")
+            return nil
+        }
     }
 
     public func getTodaySessions() -> [OffScreenSession] {
@@ -46,7 +61,12 @@ public final class SessionRepository {
             },
             sortBy: [SortDescriptor(\.startTime, order: .reverse)]
         )
-        return (try? modelContext.fetch(descriptor)) ?? []
+        do {
+            return try modelContext.fetch(descriptor)
+        } catch {
+            logger.error("Failed to fetch today's sessions: \(error.localizedDescription)")
+            return []
+        }
     }
 
     public func getTodayTotalMillis() -> Int64 {
@@ -69,7 +89,12 @@ public final class SessionRepository {
             },
             sortBy: [SortDescriptor(\.startTime, order: .reverse)]
         )
-        return (try? modelContext.fetch(descriptor)) ?? []
+        do {
+            return try modelContext.fetch(descriptor)
+        } catch {
+            logger.error("Failed to fetch sessions for range \(start) to \(end): \(error.localizedDescription)")
+            return []
+        }
     }
 
     /// Syncs today's total, goal, and active status to AppGroup UserDefaults for WidgetKit
@@ -85,3 +110,4 @@ public final class SessionRepository {
         defaults.set(Date().timeIntervalSince1970, forKey: "widget_last_updated")
     }
 }
+
