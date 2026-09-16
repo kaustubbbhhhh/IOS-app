@@ -1,0 +1,367 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1001 /* OffScreenApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2001 /* OffScreenApp.swift */; };
+		1002 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2002 /* AppColors.swift */; };
+		1003 /* AppTypography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2003 /* AppTypography.swift */; };
+		1004 /* AppStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2004 /* AppStyle.swift */; };
+		1005 /* OffScreenSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2005 /* OffScreenSession.swift */; };
+		1006 /* GoalPreferences.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2006 /* GoalPreferences.swift */; };
+		1007 /* StreakModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2007 /* StreakModels.swift */; };
+		1008 /* HistoryModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2008 /* HistoryModels.swift */; };
+		1009 /* SessionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2009 /* SessionRepository.swift */; };
+		1010 /* StreakCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2010 /* StreakCalculator.swift */; };
+		1011 /* ScreenTrackingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2011 /* ScreenTrackingService.swift */; };
+		1012 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2012 /* NotificationService.swift */; };
+		1013 /* StreakBadge.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2013 /* StreakBadge.swift */; };
+		1014 /* OffScreenTimerCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2014 /* OffScreenTimerCard.swift */; };
+		1015 /* DailyProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2015 /* DailyProgressRing.swift */; };
+		1016 /* SessionHistoryList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2016 /* SessionHistoryList.swift */; };
+		1017 /* WeeklyBarGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2017 /* WeeklyBarGraph.swift */; };
+		1018 /* DateDetailCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2018 /* DateDetailCard.swift */; };
+		1019 /* WeeklyAverageCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2019 /* WeeklyAverageCard.swift */; };
+		1020 /* GoalStreakSheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2020 /* GoalStreakSheet.swift */; };
+		1021 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2021 /* OnboardingView.swift */; };
+		1022 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2022 /* DashboardView.swift */; };
+		1023 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2023 /* HistoryView.swift */; };
+		1024 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2024 /* MainTabView.swift */; };
+		1025 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2025 /* DashboardViewModel.swift */; };
+		1026 /* HistoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2026 /* HistoryViewModel.swift */; };
+		1027 /* DurationFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2027 /* DurationFormatter.swift */; };
+		1028 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2028 /* HapticManager.swift */; };
+		1029 /* DateExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2029 /* DateExtensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2000 /* OffScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OffScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2001 /* OffScreenApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffScreenApp.swift; sourceTree = "<group>"; };
+		2002 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		2003 /* AppTypography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTypography.swift; sourceTree = "<group>"; };
+		2004 /* AppStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppStyle.swift; sourceTree = "<group>"; };
+		2005 /* OffScreenSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffScreenSession.swift; sourceTree = "<group>"; };
+		2006 /* GoalPreferences.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalPreferences.swift; sourceTree = "<group>"; };
+		2007 /* StreakModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakModels.swift; sourceTree = "<group>"; };
+		2008 /* HistoryModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryModels.swift; sourceTree = "<group>"; };
+		2009 /* SessionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionRepository.swift; sourceTree = "<group>"; };
+		2010 /* StreakCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakCalculator.swift; sourceTree = "<group>"; };
+		2011 /* ScreenTrackingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScreenTrackingService.swift; sourceTree = "<group>"; };
+		2012 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		2013 /* StreakBadge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakBadge.swift; sourceTree = "<group>"; };
+		2014 /* OffScreenTimerCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OffScreenTimerCard.swift; sourceTree = "<group>"; };
+		2015 /* DailyProgressRing.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyProgressRing.swift; sourceTree = "<group>"; };
+		2016 /* SessionHistoryList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionHistoryList.swift; sourceTree = "<group>"; };
+		2017 /* WeeklyBarGraph.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyBarGraph.swift; sourceTree = "<group>"; };
+		2018 /* DateDetailCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateDetailCard.swift; sourceTree = "<group>"; };
+		2019 /* WeeklyAverageCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyAverageCard.swift; sourceTree = "<group>"; };
+		2020 /* GoalStreakSheet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalStreakSheet.swift; sourceTree = "<group>"; };
+		2021 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		2022 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		2023 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		2024 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		2025 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		2026 /* HistoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewModel.swift; sourceTree = "<group>"; };
+		2027 /* DurationFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DurationFormatter.swift; sourceTree = "<group>"; };
+		2028 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		2029 /* DateExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtensions.swift; sourceTree = "<group>"; };
+		2030 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4001 /* OffScreen */ = {
+			isa = PBXGroup;
+			children = (
+				2001 /* OffScreenApp.swift */,
+				2030 /* Info.plist */,
+				4002 /* Theme */,
+				4003 /* Models */,
+				4004 /* Data */,
+				4005 /* Services */,
+				4006 /* Views */,
+				4007 /* ViewModels */,
+				4008 /* Utilities */,
+			);
+			path = OffScreen;
+			sourceTree = "<group>";
+		};
+		4002 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				2002 /* AppColors.swift */,
+				2003 /* AppTypography.swift */,
+				2004 /* AppStyle.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		4003 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				2005 /* OffScreenSession.swift */,
+				2006 /* GoalPreferences.swift */,
+				2007 /* StreakModels.swift */,
+				2008 /* HistoryModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4004 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2009 /* SessionRepository.swift */,
+				2010 /* StreakCalculator.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		4005 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2011 /* ScreenTrackingService.swift */,
+				2012 /* NotificationService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		4006 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				2021 /* OnboardingView.swift */,
+				2022 /* DashboardView.swift */,
+				2023 /* HistoryView.swift */,
+				2024 /* MainTabView.swift */,
+				2013 /* StreakBadge.swift */,
+				2014 /* OffScreenTimerCard.swift */,
+				2015 /* DailyProgressRing.swift */,
+				2016 /* SessionHistoryList.swift */,
+				2017 /* WeeklyBarGraph.swift */,
+				2018 /* DateDetailCard.swift */,
+				2019 /* WeeklyAverageCard.swift */,
+				2020 /* GoalStreakSheet.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		4007 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				2025 /* DashboardViewModel.swift */,
+				2026 /* HistoryViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		4008 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				2027 /* DurationFormatter.swift */,
+				2028 /* HapticManager.swift */,
+				2029 /* DateExtensions.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		4000 /* Main Group */ = {
+			isa = PBXGroup;
+			children = (
+				4001 /* OffScreen */,
+				2000 /* OffScreen.app */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5001 /* OffScreen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6001 /* Build configuration list for PBXNativeTarget "OffScreen" */;
+			buildPhases = (
+				7001 /* Sources */,
+				3001 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OffScreen;
+			productName = OffScreen;
+			productReference = 2000 /* OffScreen.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 6000 /* Build configuration list for PBXProject "OffScreen" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4000 /* Main Group */;
+			productRefGroup = 4000 /* Main Group */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5001 /* OffScreen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1001 /* OffScreenApp.swift in Sources */,
+				1002 /* AppColors.swift in Sources */,
+				1003 /* AppTypography.swift in Sources */,
+				1004 /* AppStyle.swift in Sources */,
+				1005 /* OffScreenSession.swift in Sources */,
+				1006 /* GoalPreferences.swift in Sources */,
+				1007 /* StreakModels.swift in Sources */,
+				1008 /* HistoryModels.swift in Sources */,
+				1009 /* SessionRepository.swift in Sources */,
+				1010 /* StreakCalculator.swift in Sources */,
+				1011 /* ScreenTrackingService.swift in Sources */,
+				1012 /* NotificationService.swift in Sources */,
+				1013 /* StreakBadge.swift in Sources */,
+				1014 /* OffScreenTimerCard.swift in Sources */,
+				1015 /* DailyProgressRing.swift in Sources */,
+				1016 /* SessionHistoryList.swift in Sources */,
+				1017 /* WeeklyBarGraph.swift in Sources */,
+				1018 /* DateDetailCard.swift in Sources */,
+				1019 /* WeeklyAverageCard.swift in Sources */,
+				1020 /* GoalStreakSheet.swift in Sources */,
+				1021 /* OnboardingView.swift in Sources */,
+				1022 /* DashboardView.swift in Sources */,
+				1023 /* HistoryView.swift in Sources */,
+				1024 /* MainTabView.swift in Sources */,
+				1025 /* DashboardViewModel.swift in Sources */,
+				1026 /* HistoryViewModel.swift in Sources */,
+				1027 /* DurationFormatter.swift in Sources */,
+				1028 /* HapticManager.swift in Sources */,
+				1029 /* DateExtensions.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		8001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = OffScreen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.offscreen.tracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		8002 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = OffScreen/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.offscreen.tracker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.9;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		8000 /* Project Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		8003 /* Project Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				SDKROOT = iphoneos;
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		6000 /* Build configuration list for PBXProject "OffScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8000 /* Project Debug */,
+				8003 /* Project Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6001 /* Build configuration list for PBXNativeTarget "OffScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8001 /* Debug */,
+				8002 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+	};
+	rootObject = 0001 /* Project object */;
+}
