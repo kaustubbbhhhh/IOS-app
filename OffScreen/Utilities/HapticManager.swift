@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import UIKit
 
 public struct HapticManager {
@@ -23,3 +24,4 @@ public struct HapticManager {
         generator.selectionChanged()
     }
 }
+#endif

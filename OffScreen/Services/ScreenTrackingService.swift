@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import Foundation
 import UIKit
 import SwiftData
@@ -90,3 +91,4 @@ public final class ScreenTrackingService: ObservableObject {
         NotificationService.shared.sendSessionSummaryNotification(totalMillis: todayTotal)
     }
 }
+#endif
